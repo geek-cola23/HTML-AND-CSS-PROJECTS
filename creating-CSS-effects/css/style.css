@@ -1,0 +1,152 @@
+/*NAVBAR*/
+/*import josefin slab font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&family=Sacramento&display=swap');
+
+html{
+    overflow-x: hidden; /*prevents browser from displaying left-right scroll bar*/
+    scroll-behavior: smooth; /*creates a smooth transistion when clicking a link*/
+}
+
+.nav-bar{
+    position: sticky; /*creates sticky element the stays in same spot*/
+    top: 0; /*tells browser to stick element at top of page*/
+    z-index: 9; /*sets stack layer for navbar to scroll over all elements*/
+}
+
+ul{
+    display: flex; /*creates flex container to expand or shrink elements to fill space*/
+    list-style-type: none; /*removes side by side horizontally*/
+    align-items: center;
+    margin: -8px -8px 0px -8px; /*margin order: top, right, bottom, left*/
+    background-color: rgb(1,128,106); 
+    border-bottom: 5px solid lightpink;
+}
+
+a{
+    display: block; /*displays anchor elements vertically on new line, added so drop down menu displays vertically not hortizontally*/
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(247,177,188);
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+a:hover, .drop:hover a:only-of-type{
+    background-color: rgb(149,238,223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+.rollover-menu{
+    display: none; /*prevents anchor links in this div from showing on web browser until otherwise specified*/
+    position: absolute;/*absolute will position the div element relative to the position of its parent element*/
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*creates trigger eggect when the user hovers their mouse over the recipes link. trigger will display all elemtns within the rollover menu class div element*/
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+.rollover-menu a{
+    color: teal;
+}
+
+.rollover-menu a:hover{
+    color: white;
+    box-sizing: 0px 8px 16px 0px rgba(90,90,90,0.2);
+}
+
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid rgb(238,118,136);
+}
+
+/*Footer*/
+
+footer{
+    align-items: center; /*will align nested html elements in center of footer tag*/
+    margin: 0px -8px -8px -8px; /*stretches footer backgroun beyond browser edge*/
+    background-color: rgb(1,128,106);
+    border-top: 5px solid rgb(247,177,188);
+    bottom: 0; /*positions footer at the bottom of the screen*/
+}
+
+table{
+    width: 100%; /*will take up full width of browser screen*/
+}
+
+td{
+    width: 33%; /*each table data item takes up 1/3 of the space available on the screen*/
+}
+
+td p{
+    font-family: 'Josefin Slab', serif; /*font type*/
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247,177,188);
+}
+
+/*body*/
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+/*headers*/
+
+h1{
+    font-family: "Sacramento", cursive;
+    font-size: 80px;
+    color: rgb(0,80,67);
+    text-align: center;
+}
+h2, h3, h4{
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+}
+
+h2{
+    color: rgb(0,80,67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247,177,188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*paragraphs*/
+
+p{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0,80,67);
+    text-align: center;
+}
+
+/*images*/
+
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
