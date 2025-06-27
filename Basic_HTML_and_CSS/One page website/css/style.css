@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+html{
+    overflow-x: hidden; /*prevents browser from displaying left-right scroll bar*/
+    scroll-behavior: smooth; /*creates a smooth transistion when clicking a link*/
+    background-color: rgba(223, 22, 206, 0.76);
+}
+
+.nav-bar{
+    position: sticky; /*creates sticky element the stays in same spot*/
+    top: 0; /*tells browser to stick element at top of page*/
+    z-index: 9; /*sets stack layer for navbar to scroll over all elements*/
+}
+ul{
+    display: flex; /*creates flex container to expand or shrink elements to fill space*/
+    list-style-type: none; /*removes side by side horizontally*/
+    align-items: center;
+    margin: -8px -8px 0px -8px; /*margin order: top, right, bottom, left*/
+    background-color: rgb(6, 189, 67); 
+    border-bottom: 5px solid rgb(223, 11, 43);
+}
+footer{
+    align-items: center; /*will align nested html elements in center of footer tag*/
+    margin: 0px -8px -8px -8px; /*stretches footer backgroun beyond browser edge*/
+    background-color: rgb(6,189,67);
+    border-top: 5px solid rgb(223,11,43);
+    bottom: 0; /*positions footer at the bottom of the screen*/
+}
+p { /* Targets all input elements */
+  font-family: "Bitcount Grid Double", system-ui; /* Choose a font, Arial as primary, sans-serif as fallback */
+  font-size: 75px; /* Set font size */
+  width: 300px; /* Set input width */
+  margin: 10px 0; /* Top/bottom margin 10px, left/right 0 */
+  border: 5px solid #2ec508; /* Solid border, 1px thick, color #ccc */
+  border-radius: 5px; /* Rounded corners with 5px radius */
+  color: rgb(243, 6, 6);
+}
+
+h3{
+    font-family: 'Bitcount Grid Double', system-ui;
+    font-size: 25px;
+    width: 150px;
+    margin: 25px 5;
+    color: pink;
+}
